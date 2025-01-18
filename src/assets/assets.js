@@ -11,6 +11,12 @@ import rating_starts from './rating_starts.png'
 import add_icon_white from './add_icon_white.png'
 import remove_icon_red from './remove_icon_red.png'
 import add_icon_green from './add_icon_green.png'
+import facebook_icon from './facebook_icon.png'
+import twitter_icon from './twitter_icon.png'
+import linkedin_icon from './linkedin_icon.png'
+import play_store from './play_store.png'
+import app_store from './app_store.png'
+import cross_icon from './cross_icon.png'
 
 import menu_1 from './menu_1.png'
 import menu_2 from './menu_2.png'
@@ -68,7 +74,13 @@ export const assets = {
     rating_starts,
     add_icon_white,
     remove_icon_red,
-    add_icon_green
+    add_icon_green,
+    facebook_icon,
+    twitter_icon,
+    linkedin_icon,
+    play_store,
+    app_store,
+    cross_icon
 }
 
 export const menu_list=[
@@ -146,7 +158,7 @@ export const food_list=[
         image:food_5,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Rolls"
     },
     {
         _id:"6",
@@ -154,7 +166,7 @@ export const food_list=[
         image:food_6,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Rolls"
     },
     {
         _id:"7",
@@ -162,7 +174,7 @@ export const food_list=[
         image:food_7,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Rolls"
     },
     {
         _id:"8",
@@ -170,7 +182,7 @@ export const food_list=[
         image:food_8,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Rolls"
     },
     {
         _id:"9",
@@ -178,7 +190,7 @@ export const food_list=[
         image:food_9,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Deserts"
     },
     {
         _id:"10",
@@ -186,7 +198,7 @@ export const food_list=[
         image:food_10,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Deserts"
     },
     {
         _id:"11",
@@ -194,7 +206,7 @@ export const food_list=[
         image:food_11,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Deserts"
     },
     {
         _id:"12",
@@ -202,107 +214,107 @@ export const food_list=[
         image:food_12,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Deserts"
     },
     {
         _id:"13",
-        name:"Greek salad",
+        name:"Chicken Sandwich",
         image:food_13,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Sandwich"
     },
     {
         _id:"14",
-        name:"Greek salad",
+        name:"Vegam Sandwich",
         image:food_14,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Sandwich"
     },
     {
         _id:"15",
-        name:"Greek salad",
+        name:"Grilled Sandwich",
         image:food_15,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Sandwich"
     },
     {
         _id:"16",
-        name:"Greek salad",
+        name:"Bread Sandwich",
         image:food_16,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Sandwich"
     },
     {
         _id:"17",
-        name:"Greek salad",
+        name:"Cup Cake",
         image:food_17,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Cake"
     },
     {
         _id:"18",
-        name:"Greek salad",
+        name:"Vegam Cake",
         image:food_18,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Cake"
     },
     {
         _id:"19",
-        name:"Greek salad",
+        name:"Butterscotch Cake",
         image:food_19,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Cake"
     },
     {
         _id:"20",
-        name:"Greek salad",
+        name:"Sliced Cake",
         image:food_20,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Cake"
     },
     {
         _id:"21",
-        name:"Greek salad",
+        name:"Garlic Mushroom",
         image:food_21,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Pure Veg"
     },
     {
         _id:"22",
-        name:"Greek salad",
+        name:"Fried Cauliflower",
         image:food_22,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Pure Veg"
     },
     {
         _id:"23",
-        name:"Greek salad",
+        name:"Mix Veg Pulao",
         image:food_23,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Pure Veg"
     },
     {
         _id:"24",
-        name:"Greek salad",
+        name:"Rice Zucchini",
         image:food_24,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Pure Veg"
     },
     {
         _id:"25",
-        name:"Greek salad",
+        name:"Cheese Pasta",
         image:food_25,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
@@ -310,7 +322,7 @@ export const food_list=[
     },
     {
         _id:"26",
-        name:"Greek salad",
+        name:"Tomato Pasta",
         image:food_26,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
@@ -318,7 +330,7 @@ export const food_list=[
     },
     {
         _id:"27",
-        name:"Greek salad",
+        name:"Creamy Pasta",
         image:food_27,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
@@ -326,7 +338,7 @@ export const food_list=[
     },
     {
         _id:"28",
-        name:"Greek salad",
+        name:"Chicken Pasta",
         image:food_28,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
@@ -334,35 +346,35 @@ export const food_list=[
     },
     {
         _id:"29",
-        name:"Greek salad",
+        name:"Butter Noodles",
         image:food_29,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Noodles"
     },
     {
         _id:"30",
-        name:"Greek salad",
+        name:"Veg Noodles",
         image:food_30,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Noodles"
     },
     {
         _id:"31",
-        name:"Greek salad",
+        name:"Samen Noodles",
         image:food_31,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Noodles"
     },
     {
         _id:"32",
-        name:"Greek salad",
+        name:"Cooked Noodles",
         image:food_32,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Noodles"
     },
 ]
 export const url = 'http://localhost:4000'
