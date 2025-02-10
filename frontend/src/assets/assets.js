@@ -4,6 +4,9 @@ import order_icon from './order_icon.png'
 import profile_image from './profile_image.png'
 import upload_area from './upload_area.png'
 import parcel_icon from './parcel_icon.png'
+import bag_icon from './bag_icon.png'
+import logout_icon from './logout_icon.png'
+import profile_icon from './profile_icon.png'
 
 import search_icon from './search_icon.png'
 import basket_icon from './basket_icon.png'
@@ -80,7 +83,10 @@ export const assets = {
     linkedin_icon,
     play_store,
     app_store,
-    cross_icon
+    cross_icon,
+    bag_icon,
+    logout_icon,
+    profile_icon
 }
 
 export const menu_list=[
@@ -318,7 +324,7 @@ export const food_list=[
         image:food_25,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Pasta"
     },
     {
         _id:"26",
@@ -326,7 +332,7 @@ export const food_list=[
         image:food_26,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Pasta"
     },
     {
         _id:"27",
@@ -334,7 +340,7 @@ export const food_list=[
         image:food_27,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Pasta"
     },
     {
         _id:"28",
@@ -342,7 +348,7 @@ export const food_list=[
         image:food_28,
         price:12,
         description:"Food provides essential nutrients for overall health and well being",
-        category:"Salad"
+        category:"Pasta"
     },
     {
         _id:"29",
