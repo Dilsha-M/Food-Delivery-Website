@@ -10,7 +10,7 @@ const placeOrder = async (req, res) => {
     const frontend_url = "http://localhost:5173/";
 
     try {
-    
+
         const formattedItems = req.body.items.map(item => ({
             foodId: item._id,
             name: item.name,
@@ -20,7 +20,7 @@ const placeOrder = async (req, res) => {
 
         const newOrder = new orderModel({
             userId: req.body.userId,
-            items: formattedItems, 
+            items: formattedItems,
             amount: req.body.amount,
             address: req.body.address
         });
@@ -57,7 +57,7 @@ const placeOrder = async (req, res) => {
             cancel_url: `${frontend_url}/verify?success=false&orderId=${newOrder._id}`
         });
 
-        res.json({ success: true, session_url: session.url }); 
+        res.json({ success: true, session_url: session.url });
 
     } catch (error) {
         console.log(error);
@@ -65,13 +65,20 @@ const placeOrder = async (req, res) => {
     }
 };
 
-const verifyOrder=async (req,res)=>{
-//    const {orderId,success}=req.body;
-//    try {
-//     if(success=="true")
-//    } catch (error) {
-    
-//    }
+const verifyOrder = async (req, res) => {
+    const { orderId, success } = req.body;
+    try {
+        if (success == "true") {
+            await orderModel.findByIdAndUpdate(orderId, { payment: true })
+            res.json({ success: true, message: "Paid" })
+        } else {
+            await orderModel.findByIdAndDelete(orderId)
+            res.json({ success: false, message: "Not Paid" })
+        }
+    } catch (error) {
+        console.log(error);
+        res.json({ success: false, message: "Error" })
+    }
 }
 
-export { placeOrder,verifyOrder }
+export { placeOrder, verifyOrder }
