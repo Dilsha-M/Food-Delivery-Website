@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './PlaceOrder.css'
 import { StoreContext } from '../../context/StoreContext'
 import axios from "axios";
@@ -44,11 +44,21 @@ function PlaceOrder() {
     if (response.data.success) {
       const { session_url } = response.data
       window.location.replace(session_url)
-    }else{
+    } else {
       alert("Error")
     }
   };
 
+  const navigate = useNavgate()
+
+  useEffect(() => {
+    if (!token) {
+      navigate('/cart')
+    }
+    else if(getTotalCartAmount()===0){
+      navigate('/cart')
+    }
+  }, [token])
 
 
   return (
